@@ -1,0 +1,132 @@
+.cartitems {
+  margin: 10px 70px;
+  min-width: 1000px;
+}
+
+.cartitems hr {
+  height: 1px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 0px;
+  color: #252525;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cartitems-format-main p,
+.cartitems-format-main img {
+  margin: 0px 10px;
+}
+
+.cartitems-name {
+  text-decoration: none;
+  color: #252525
+}
+
+.cartitems-format {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.carticon-product-icon {
+  height: 62px;
+}
+
+.cartitems-remove-icon {
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
+}
+
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  font-size: 18px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 100px 0px;
+}
+
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #252525;
+  font-size: 20px;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.cartitems-total h1 {
+  font-size: 36px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.cartitems-total button {
+  width: 262px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background: #ff3014;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cartitems-promocode {
+  flex: 1;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cartitems-promocode p {
+  color: #252525;
+}
+
+.cartitems-promobox {
+  width: 504px;
+  margin-top: 40px;
+  padding-left: 20px;
+  height: 60px;
+  border-radius: 30px;
+  background: #d8d8d8;
+}
+
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  width: 330px;
+  height: 50px;
+}
+
+.cartitems-promobox button {
+  width: 170px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  background: rgb(36, 36, 36);
+  color: white;
+  cursor: pointer;
+}

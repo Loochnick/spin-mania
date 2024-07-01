@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spin-mania/static/css/main.e7c74bbb.css",
-    "main.js": "/spin-mania/static/js/main.2513a362.js",
+    "main.css": "/spin-mania/static/css/main.d11c766a.css",
+    "main.js": "/spin-mania/static/js/main.f9e7b78e.js",
     "static/media/arrivals_image.png": "/spin-mania/static/media/arrivals_image.cba6026c78c13925418b.png",
     "static/media/exclusive_image.png": "/spin-mania/static/media/exclusive_image.35ad477ebba8df3f7f84.png",
     "static/media/shimano_vanquish_5.jpeg": "/spin-mania/static/media/shimano_vanquish_5.9b728749bb3c631aa449.jpeg",
@@ -95,11 +95,11 @@
     "static/media/logo.png": "/spin-mania/static/media/logo.c6b77431ce6f1027c496.png",
     "static/media/gamakatsu_1.jpg": "/spin-mania/static/media/gamakatsu_1.023b115455a2eb9bfba2.jpg",
     "index.html": "/spin-mania/index.html",
-    "main.e7c74bbb.css.map": "/spin-mania/static/css/main.e7c74bbb.css.map",
-    "main.2513a362.js.map": "/spin-mania/static/js/main.2513a362.js.map"
+    "main.d11c766a.css.map": "/spin-mania/static/css/main.d11c766a.css.map",
+    "main.f9e7b78e.js.map": "/spin-mania/static/js/main.f9e7b78e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7c74bbb.css",
-    "static/js/main.2513a362.js"
+    "static/css/main.d11c766a.css",
+    "static/js/main.f9e7b78e.js"
   ]
 }

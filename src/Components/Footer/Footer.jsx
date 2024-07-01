@@ -9,7 +9,7 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png';
 const Footer = () => {
   return (
     <div className="footer">
-      <Link className="footer-logo" to="/">
+      <Link className="footer-logo" to="/spin-mania">
         <img src={footer_logo} alt="" />
         <p>Spin-Mania</p>
       </Link>

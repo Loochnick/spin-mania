@@ -12,12 +12,12 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link className="nav-logo" onClick={()=>{setMenu("home")}} to="/">
+      <Link className="nav-logo" onClick={()=>{setMenu("home")}} to="/spin-mania">
         <img src={logo} alt="" />
         <p>Spin-Mania</p>
       </Link>
       <ul className="nav-menu">
-        <li onClick={()=>{setMenu("home")}}><Link className="nav-menu-link" to='/'>Home</Link>{ window.location.href === "http://localhost:3000/" ? <hr/> : <></> }</li>
+        <li onClick={()=>{setMenu("home")}}><Link className="nav-menu-link" to='/spin-mania'>Home</Link>{ window.location.href === "http://localhost:3000/spin-mania" ? <hr/> : <></> }</li>
         <li onClick={()=>{setMenu("rods")}}><Link className="nav-menu-link" to='/rods'>Rods</Link>{ window.location.href === "http://localhost:3000/rods" ? <hr/> : <></> }</li>
         <li onClick={()=>{setMenu("reels")}}><Link className="nav-menu-link" to='/reels'>Reels</Link>{ window.location.href === "http://localhost:3000/reels" ? <hr/> : <></> }</li>
         <li onClick={()=>{setMenu("lures")}}><Link className="nav-menu-link" to='/lures'>Lures</Link>{ window.location.href === "http://localhost:3000/lures" ? <hr/> : <></> }</li>

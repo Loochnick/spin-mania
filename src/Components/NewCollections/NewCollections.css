@@ -28,3 +28,30 @@
   margin-top: 50px;
   gap: 30px;
 }
+
+@media (max-width: 950px) {
+  .new-collections {
+    width: 80%;
+    min-width: 0;
+    margin: 30px auto
+  }
+
+  .collections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .new-collections {
+    width: 70%;
+    min-width: 0;
+  }
+
+  .new-collections h1 {
+    font-size: 26px;
+  }
+
+  .collections {
+    grid-template-columns: 1fr;
+  }
+}

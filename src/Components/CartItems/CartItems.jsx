@@ -9,36 +9,38 @@ const CartItems = () => {
 
   return (
     <div className='cartitems'>
-      <div className="cartitems-format-main">
-        <p>Products</p>
-        <p>Title</p>
-        <p>Price</p>
-        <p>Quantity</p>
-        <p>Total</p>
-        <p>Remove</p>
-      </div>
-      <hr />
-      {all_product.map((e) => {
-        if (cartItems[e.id] > 0)
-        {
-          return <div key={e.id}>
-            <div className="cartitems-format-main cartitems-format">
-              <Link to={`/product/${e.id}`}>
-                <img src={e.image1} alt="" className='carticon-product-icon' />
-              </Link>
-              <Link className='cartitems-name' to={`/product/${e.id}`}>
-                <p>{e.name}</p>
-              </Link>
-              <p>{e.new_price}&#8364;</p>
-              <button className='cartitems-quantity'>{cartItems[e.id]}</button>
-              <p>{e.new_price * cartItems[e.id]}&#8364;</p>
-              <img className='cartitems-remove-icon' src={remove_icon} onClick={() => {removeFromCart(e.id)}} alt="" />
+      <div className="cartitems-up">
+        <div className="cartitems-format-main text-left">
+          <p>Products</p>
+          <p>Title</p>
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>Total</p>
+          <p>Remove</p>
+        </div>
+        <hr />
+        {all_product.map((e) => {
+          if (cartItems[e.id] > 0)
+          {
+            return <div key={e.id}>
+              <div className="cartitems-format-main cartitems-format">
+                <Link to={`/product/${e.id}`}>
+                  <img src={e.image1} alt="" className='carticon-product-icon' />
+                </Link>
+                <Link className='cartitems-name' to={`/product/${e.id}`}>
+                  <p>{e.name}</p>
+                </Link>
+                <p>{e.new_price}&#8364;</p>
+                <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                <p>{e.new_price * cartItems[e.id]}&#8364;</p>
+                <div><img className='cartitems-remove-icon' src={remove_icon} onClick={() => {removeFromCart(e.id)}} alt="" /></div>
+              </div>
+              <hr />
             </div>
-            <hr />
-          </div>
-        }
-        return null;
-      })}
+          }
+          return null;
+        })}
+      </div>
       <div className="cartitems-down">
         <div className="cartitems-total">
           <h1>Cart Totals</h1>
@@ -62,10 +64,11 @@ const CartItems = () => {
         </div>
         <div className="cartitems-promocode">
           <p>If you have a promo code, enter it here</p>
-          <div className="cartitems-promobox">
+          {/* <div className="cartitems-promobox"> */}
             <input type="text" placeholder='promo code' />
-            <button>Submit</button>
-          </div>
+            
+          {/* </div> */}
+          <button>Submit</button>
         </div>
       </div>
     </div>

@@ -31,3 +31,14 @@
   padding: 48px;
   padding-bottom: 70px;
 }
+
+@media (max-width: 559px) {
+  .descriptionbox {
+    margin: 70px 30px;
+  }
+
+  .descriptionbox-description {
+    padding: 28px;
+  padding-bottom: 50px;
+  }
+}

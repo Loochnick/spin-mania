@@ -19,7 +19,7 @@ const Arrivals = () => {
         </div>
       </div>
       <div className="arrivals-right">
-        <img src={arrivals_image} alt='' />
+        <img src={arrivals_image} alt='spin-reel' />
       </div>
     </div>
   )

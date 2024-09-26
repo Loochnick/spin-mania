@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .arrivals {
   height: 80vh;
   min-width: 800px;
@@ -55,5 +59,49 @@
 
 .arrivals-right img {
   height: 450px;
-  margin-left: 100px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1040px) {
+  .arrivals {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-width: 0;
+  }
+
+  .arrivals-left {
+    padding-top: 3em;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .arrivals-right {
+    /* width: 80%; */
+  }
+
+  .arrivals-right img {
+    margin: 3em 0;
+    height: 80vw;
+    max-height: 425px;
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrivals-left {
+    width: 80%;
+  }
+
+  .arrivals-left h2 {
+    font-size: 24px;
+  }
+
+  .arrivals-left p {
+    font-size: 32px;
+  }
+
+  .arrivals-latest-btn {
+    width: 240px;
+  }
 }
